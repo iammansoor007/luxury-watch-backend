@@ -7,4 +7,4 @@ const router = express.Router();
 router.route('/process').post(protect, processPayment);
 router.route('/stripeapi').get(protect, sendStripeApi);
 
-module.exports = router;
+module.exports = router;  // <- This line is critical
